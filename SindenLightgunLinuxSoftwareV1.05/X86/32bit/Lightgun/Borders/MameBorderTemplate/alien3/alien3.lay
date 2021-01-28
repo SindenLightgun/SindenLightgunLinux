@@ -1,0 +1,24 @@
+<mamelayout version="2">
+	<element name="Original">
+		<image file="whiteborder.png" />
+	</element>
+	<element name="Stretch">
+		<image file="whiteborderfull.png" />
+	</element>
+	<view name="OriginalAspectRatio">
+		<screen index="0">
+			<bounds x="224" y="18" width="1152" height="864" />
+		</screen>
+		<bezel element="Original">
+			<bounds x="0" y="0" width="1600" height="900" />
+		</bezel>	
+	</view>	
+	<view name="SretchedAspectRatio">
+		<screen index="0">
+			<bounds x="0" y="0" width="1600" height="900" />
+		</screen>
+		<bezel element="Stretch">
+			<bounds x="0" y="0" width="1600" height="900" />
+		</bezel>		
+	</view>	
+</mamelayout>
