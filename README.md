@@ -7,9 +7,7 @@
 
 ## Release Notes
 
-### 1.6
+### 1.5.3
 
 - Git versioned setup scripts
 - [Linux] new install scripts
-
-### 1.5
