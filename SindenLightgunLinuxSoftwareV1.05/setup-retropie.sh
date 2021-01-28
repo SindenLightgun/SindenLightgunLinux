@@ -5,7 +5,7 @@
 ## RretroPie Scripts
 #
 cp -v RetroPieScripts/*.sh /home/pi/RetroPie/roms/ports/
-chmod -v 777 /home/pi/RetroPie/roms/ports/SindenLightgun*
+chmod -v 755 /home/pi/RetroPie/roms/ports/SindenLightgun*
 
 ## Borders
 #
