@@ -15,20 +15,20 @@ VERSION=$(git symbolic-ref --short -q HEAD); echo "Current Version ${VERSION}"
 
 ### Update
 
-- Update files from the remote repository
-- You will continue to be on the same version as you currently are
+Update files from the remote repository
 
 ```
 cd /home/pi/SindenLightgunLinux
 git pull
 ```
 
-- Change to a new version
+### Change to a new version
+
+If you are a new install, you will be on the default branch of the repo, typically the most current. If you want to change the version of either a new install or an update to a newer version, you can do that via:
 
 ```
 git branch checkout VERSION_NAME
 ```
-
 
 ## Configure
 
