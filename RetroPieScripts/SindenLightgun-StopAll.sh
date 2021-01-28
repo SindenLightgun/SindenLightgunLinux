@@ -2,4 +2,4 @@
 
 sudo pkill "mono"
 sudo rm /tmp/LightgunMono* -f
-sleep(2)
+sleep 2
