@@ -1,7 +1,7 @@
 #!/bin/bash
 
-rm /opt/retropie/emulators/retroarch/overlays/Sinden*
-rm /home/pi/RetroPie/roms/ports/*SindenLightgun*
+rm -f /opt/retropie/emulators/retroarch/overlays/Sinden*
+rm -f /home/pi/RetroPie/roms/ports/*SindenLightgun*
 
 ## bin/executables; but leave configs
 #
