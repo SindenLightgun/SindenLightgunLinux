@@ -9,6 +9,6 @@ your home directory
 - x86-32bit
 - x86-64bit
 
-- mv arch-YOUR-ARCHITECTURE /home/Lightgun
+- mv arch/YOUR-ARCHITECTURE /home/Lightgun
 
 
