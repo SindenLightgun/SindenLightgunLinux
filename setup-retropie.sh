@@ -14,7 +14,7 @@ cp -v Borders/RetroArchBorders/* /opt/retropie/emulators/retroarch/overlays/
 
 ## Executable Directory / configs
 #
-BIN_DIR="../bin"
+BIN_DIR="bin"
 mkdir -p $BIN_DIR
 
 VERSION=$(git symbolic-ref --short -q HEAD)
