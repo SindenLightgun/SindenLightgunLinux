@@ -35,6 +35,7 @@ git branch checkout VERSION_NAME
 Configure Sinden Lightgun dependencies, utilities, and borders. These scripts will update the software as needed, but not touch an existing configuration file(s).
 
 ```
+cd /home/pi/SindenLightgunLinux; \
 chmod 755 setup*; \
 ./setup-lightgun.sh; \
 ./setup-retropie.sh; \
