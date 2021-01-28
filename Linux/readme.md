@@ -1,29 +1,49 @@
 # Installation
 
-## Install
+## Download
 
-Install Sinden Lightgun dependencies, utilities, and borders
+This will download the latest version of the Sinden Lightgun utilities
 
 ```
 cd /home/pi; \
 git clone path/to/repo; \
+ehco ""; \
+VERSION=$(git symbolic-ref --short -q HEAD); echo "Current Version ${VERSION}"
+```
+
+## Configure
+
+Configure Sinden Lightgun dependencies, utilities, and borders
+
+```
 chmod 755 setup*; \
 ./setup-lightgun.sh; \
 ./setup-retropie.sh; \
 ```
 
-## Per Architecture
+## Per Architecture Executables
 
-Determine which architecture you are running on and move the files to
-your home directory
+Determine which architecture you are running on and copy the files
 
-- Pi-Arm
-- x86-32bit
-- x86-64bit
+### Pi-Arm
 
 ```
-cp -r arch/YOUR-ARCHITECTURE/* ../bin/
+cp -r arch/Pi-Arm/* ../bin/
 ```
+
+### x86-32bit
+
+```
+cp -r arch/x86-32bit/* ../bin/
+```
+
+### x86-64bit
+
+```
+cp -r arch/x86-64bit/* ../bin/
+```
+
+## Finish
 
 You should now reboot to have EmulationStation include the Lightgun
 
