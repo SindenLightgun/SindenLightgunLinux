@@ -7,7 +7,7 @@ This will download the latest version of the Sinden Lightgun utilities
 ```
 cd /home/pi; \
 git clone git@github.com:cgmckeever/SindenLightgun.git; \
-ehco ""; \
+echo ""; \
 VERSION=$(git symbolic-ref --short -q HEAD); echo "Current Version ${VERSION}"
 ```
 
