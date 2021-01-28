@@ -19,7 +19,9 @@ mkdir -p $LIGHTGUN_DIR
 VERSION=$(git symbolic-ref --short -q HEAD)
 TS=$(date +%s)
 
-for each config $LIGHTGUN_DIR do
+cp configs/test.bmp ${LIGHTGUN_DIR}/
+
+for each config $LIGHTGUN_DIR/*.config do
     if [ -e ${LIGHTGUN_DIR}/${config} ]; then
         cp ${LIGHTGUN_DIR}/${config} ${LIGHTGUN_DIR}/${config}.bak.${VERSION}.${TS}
     else
