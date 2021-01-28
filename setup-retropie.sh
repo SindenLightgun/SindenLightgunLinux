@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p bin
+
 ./clean-up.sh
 
 ## RretroPie Scripts

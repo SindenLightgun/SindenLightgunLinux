@@ -5,5 +5,5 @@ rm /home/pi/RetroPie/roms/ports/*SindenLightgun*
 
 ## bin/executables; but leave configs
 #
-find bin/ ! -name *exe.config* -maxdepth 1 -type f -delete
+find bin/ -maxdepth 1 ! -name *exe.config*  -type f -delete
 rm -rf bin/RetroArchPatch
