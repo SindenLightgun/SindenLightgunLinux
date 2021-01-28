@@ -20,6 +20,7 @@ VERSION=$(git symbolic-ref --short -q HEAD)
 TS=$(date +%s)
 
 cp configs/test.bmp ${LIGHTGUN_DIR}/
+cp ../License.txt ${LIGHTGUN_DIR}/
 
 for each config $LIGHTGUN_DIR/*.config do
     if [ -e ${LIGHTGUN_DIR}/${config} ]; then
