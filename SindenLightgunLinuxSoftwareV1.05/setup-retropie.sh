@@ -20,10 +20,10 @@ VERSION=$(git symbolic-ref --short -q HEAD)
 TS=$(date +%s)
 
 for each config $LIGHTGUN_DIR do
-    if [ -e ${$LIGHTGUN_DIR}/${config} ]; then
-        cp ${$LIGHTGUN_DIR}/${config} ${$LIGHTGUN_DIR}/${config}.bak.${VERSION}.${TS}
+    if [ -e ${LIGHTGUN_DIR}/${config} ]; then
+        cp ${LIGHTGUN_DIR}/${config} ${LIGHTGUN_DIR}/${config}.bak.${VERSION}.${TS}
     else
-        cp configs/${config} ${$LIGHTGUN_DIR}/
+        cp configs/${config} ${LIGHTGUN_DIR}/
     fi
 end for
 
