@@ -3,4 +3,7 @@
 rm /opt/retropie/emulators/retroarch/overlays/SindenLightgun*
 rm /home/pi/RetroPie/roms/ports/*SindenLightgun*
 
-rm -rfv bin/* !("LightgunMono.exe.config"|"LightgunMono2.exe.config")
+## bin/executables; but leave configs
+#
+find ../bin/ ! -name *exe.config* -maxdepth 1 -type f -delete
+rm -rf RetroArchPatch

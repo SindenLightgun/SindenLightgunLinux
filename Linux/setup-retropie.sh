@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#./clean-up.sh
+./clean-up.sh
 
 ## RretroPie Scripts
 #
@@ -27,7 +27,6 @@ for configfile in configs/*.config; do
     if [ -e ${BIN_DIR}/${CONFIG} ]; then
         cp ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
     else
-        echo "create"
         cp ${configfile} ${BIN_DIR}/
     fi
 done

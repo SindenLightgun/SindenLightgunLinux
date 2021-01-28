@@ -1,21 +1,12 @@
 # Installation
 
-## Quick Setup
+## Install
+
+Install Sinden Lightgun dependencies, utilities, and borders
 
 ```
-CURRENT_RELEASE=SindenLightgunSoftwareReleaseV1.05
-cd /tmp; \
-wget https://www.sindenlightgun.com/software/${CURRENT_RELEASE}.zip; \
-unzip {CURRENT_RELEASE}.zip; \
-chmod 755 *.sh; \
-./setup-lightgun.sh; \
-./setup-retropie.sh; \
-rm -rf Sinden*; \
-```
-
-## Prep
-
-```
+cd /home/pi; \
+git clone path/to/repo; \
 chmod 755 setup*; \
 ./setup-lightgun.sh; \
 ./setup-retropie.sh; \
@@ -30,6 +21,8 @@ your home directory
 - x86-32bit
 - x86-64bit
 
-- cp -r arch/YOUR-ARCHITECTURE/* /home/Lightgun/
+```
+cp -r arch/YOUR-ARCHITECTURE/* ../bin/
+```
 
 
