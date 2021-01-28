@@ -2,6 +2,8 @@
 
 ## Download
 
+### New install
+
 This will download the latest version of the Sinden Lightgun utilities
 
 ```
@@ -11,9 +13,25 @@ echo ""; \
 VERSION=$(git symbolic-ref --short -q HEAD); echo "Current Version ${VERSION}"
 ```
 
+### Update
+
+- Update files from the remote repository
+- You will continue to be on the same version as you currently are
+
+```
+git pull
+```
+
+- Change to a new version
+
+```
+git branch checkout VERSION_NAME
+```
+
+
 ## Configure
 
-Configure Sinden Lightgun dependencies, utilities, and borders
+Configure Sinden Lightgun dependencies, utilities, and borders. These scripts will update the software as needed, but not touch an existing configuration file(s).
 
 ```
 chmod 755 setup*; \
