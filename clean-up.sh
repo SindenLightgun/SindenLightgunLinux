@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm /opt/retropie/emulators/retroarch/overlays/SindenLightgun*
+rm /opt/retropie/emulators/retroarch/overlays/Sinden*
 rm /home/pi/RetroPie/roms/ports/*SindenLightgun*
 
 ## bin/executables; but leave configs
