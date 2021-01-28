@@ -33,3 +33,5 @@ for configfile in configs/*.config; do
     fi
 done
 
+
+echo "Dont forget to copy your `arch` files"
