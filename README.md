@@ -19,6 +19,7 @@ VERSION=$(git symbolic-ref --short -q HEAD); echo "Current Version ${VERSION}"
 - You will continue to be on the same version as you currently are
 
 ```
+cd /home/pi/SindenLightgunLinux
 git pull
 ```
 
