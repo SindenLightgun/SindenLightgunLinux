@@ -2,3 +2,5 @@
 
 cd /home/pi/SindenLightgunLinux/bin/
 sudo mono-service LightgunMono.exe
+
+ls /tmp/Lightgun*

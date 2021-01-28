@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo pkill "mono"
-sudo rm /tmp/LightgunMono* -f
+sudo rm -f /tmp/LightgunMono*
