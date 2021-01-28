@@ -25,4 +25,6 @@ your home directory
 cp -r arch/YOUR-ARCHITECTURE/* ../bin/
 ```
 
+You should now reboot to have EmulationStation include the Lightgun
+
 
