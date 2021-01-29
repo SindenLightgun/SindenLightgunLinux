@@ -28,7 +28,7 @@ git fetch
 If you are a new install, you will be on the default branch of the repo, typically the most current. If you want to change the version of either a new install or an update to a newer version, you can grab all versions, list them, and change via:
 
 ```
-git fetch; git branch -a
+git fetch; git branch
 git branch checkout VERSION_NAME
 ```
 
