@@ -3,12 +3,12 @@
 echo ""
 echo ""
 echo "Cleaning previous Sinden Border Overlays"
-rm -f /opt/retropie/emulators/retroarch/overlays/Sinden*
+rm -fv /opt/retropie/emulators/retroarch/overlays/Sinden*
 
 echo ""
 echo ""
 echo "Cleaning previous Sinden Utilities"
-rm -f /home/pi/RetroPie/roms/ports/*SindenLightgun*
+rm -fv /home/pi/RetroPie/roms/ports/*SindenLightgun*
 
 ## bin/executables; but leave configs
 #
