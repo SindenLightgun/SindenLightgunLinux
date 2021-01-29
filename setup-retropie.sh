@@ -44,7 +44,7 @@ for configfile in configs/*.config; do
     fi
 done
 
-if [ HAS_BACKUPS == 1 ]; then
+if [ $HAS_BACKUPS == 1 ]; then
     echo ""
     echo "All backups:"
     ls -la ${BIN_DIR}/${CONFIG}.bak*
