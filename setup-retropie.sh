@@ -55,7 +55,7 @@ fi
 echo ""
 echo ""
 echo "Copying Sunden udev rules."
-sudo cp -v DeviceScripts/99-sinden-lightgun.rule /etc/udev/rules.d/
+sudo cp -v DeviceScripts/99-sinden-lightgun.rules /etc/udev/rules.d/
 sudo sudo udevadm control --reload-rules && sudo udevadm trigger
 
 ## Copy per-arch Binaries
