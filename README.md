@@ -20,7 +20,7 @@ Update the files of your current version:
 
 ```
 cd /home/pi/SindenLightgunLinux
-git fetch
+git pull
 ```
 
 ### Change to a new version
