@@ -10,24 +10,34 @@ mkdir -p $BIN_DIR
 
 ## RetroPie Scripts
 #
+echo ""
+echo ""
+echo "Copying Sinden Utilities"
 mkdir -p /home/pi/RetroPie/roms/ports/
 cp -v RetroPieScripts/*.sh /home/pi/RetroPie/roms/ports/
 chmod -v 755 /home/pi/RetroPie/roms/ports/SindenLightgun*
 
 ## Borders
 #
+echo ""
+echo "Copying Sinden Border Overlays"
 cp -v Borders/RetroArchBorders/* /opt/retropie/emulators/retroarch/overlays/
 
 ## Binary Directory Configs
 #
+echo ""
+echo ""
+echo "Copying Configurations."
+
 cp configs/test.bmp ${BIN_DIR}/
 
 for configfile in configs/*.config; do
     CONFIG=$(basename $configfile)
     if [ -f ${BIN_DIR}/${CONFIG} ]; then
-        cp ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
+        echo "Configurations already exist. Creating backup."
+        cp -v ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
     else
-        cp ${configfile} ${BIN_DIR}/
+        cp -v ${configfile} ${BIN_DIR}/
     fi
 done
 
@@ -39,14 +49,15 @@ if [[ "$ARCH" == *"arm"* ]]; then
     ARCH="Pi-ARM"
 fi
 
+echo ""
+echo ""
 if [ -e arch/${ARCH} ]; then
     echo "Copying ${ARCH} binaries."
-    cp -r arch/${ARCH}/* ${BIN_DIR}/
+    cp -rv arch/${ARCH}/* ${BIN_DIR}/
 fi
 
 
 ## Leave this out of the above just to make sure stuff was copied
-echo ""
 if [ -f ${BIN_DIR}/LightgunMono.exe ]; then
     echo "Properly copied arch/${ARCH} binaries."
 else
