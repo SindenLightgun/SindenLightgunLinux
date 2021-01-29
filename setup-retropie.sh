@@ -36,6 +36,9 @@ for configfile in configs/*.config; do
     if [ -f ${BIN_DIR}/${CONFIG} ]; then
         echo "Configurations already exist. Creating backup."
         cp -v ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
+        echo ""
+        echo "All backups:"
+        ls -la ${BIN_DIR}/${CONFIG}.bak*
     else
         cp -v ${configfile} ${BIN_DIR}/
     fi
