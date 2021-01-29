@@ -47,7 +47,7 @@ done
 if [ $HAS_BACKUPS == 1 ]; then
     echo ""
     echo "All backups:"
-    ls -la ${BIN_DIR}/${CONFIG}.bak*
+    ls -la ${BIN_DIR}/*bak*
 fi
 
 ## Copy per-arch Binaries
