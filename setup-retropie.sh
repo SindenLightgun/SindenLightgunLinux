@@ -31,18 +31,24 @@ echo "Copying Configurations."
 
 cp configs/test.bmp ${BIN_DIR}/
 
+HAS_BACKUPS=0
 for configfile in configs/*.config; do
     CONFIG=$(basename $configfile)
     if [ -f ${BIN_DIR}/${CONFIG} ]; then
-        echo "Configurations already exist. Creating backup."
-        cp -v ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
         echo ""
-        echo "All backups:"
-        ls -la ${BIN_DIR}/${CONFIG}.bak*
+        echo "${CONFIG} Configurations already exist. Creating backup."
+        cp -v ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
+        HAS_BACKUPS=1
     else
         cp -v ${configfile} ${BIN_DIR}/
     fi
 done
+
+if [ HAS_BACKUPS == 1 ]; then
+    echo ""
+    echo "All backups:"
+    ls -la ${BIN_DIR}/${CONFIG}.bak*
+fi
 
 ## Copy per-arch Binaries
 #
