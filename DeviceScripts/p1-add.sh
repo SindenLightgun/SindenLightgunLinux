@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sleep 2
+sleep 5
 sudo -u pi /home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh
