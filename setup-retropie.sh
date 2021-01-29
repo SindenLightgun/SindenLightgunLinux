@@ -48,7 +48,7 @@ fi
 ## Leave this out of the above just to make sure stuff was copied
 if [ ! -f ${BIN_DIR}/LightgunMono.exe ]; then
     echo ""
-    echo "Could not properly determine your system architecture."
+    echo "Could not properly determine your system architecture [${ARCH}]."
     echo "Follow the README to copy the proper files to the '/bin' folder"
     echo ""
     echo ""
