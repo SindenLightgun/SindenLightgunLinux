@@ -18,7 +18,7 @@ chmod -v 755 /home/pi/RetroPie/roms/ports/SindenLightgun*
 #
 cp -v Borders/RetroArchBorders/* /opt/retropie/emulators/retroarch/overlays/
 
-## Executable Directory / configs
+## Binary Directory Configs
 #
 cp configs/test.bmp ${BIN_DIR}/
 
@@ -31,7 +31,7 @@ for configfile in configs/*.config; do
     fi
 done
 
-## Copy per-arch executables
+## Copy per-arch Binaries
 #
 ARCH=$(uname -m)
 
@@ -40,16 +40,18 @@ if [[ "$ARCH" == *"arm"* ]]; then
 fi
 
 if [ -e arch/${ARCH} ]; then
-    echo "Copying ${ARCH} executables."
+    echo "Copying ${ARCH} binaries."
     cp -r arch/${ARCH}/* ${BIN_DIR}/
 fi
 
 
 ## Leave this out of the above just to make sure stuff was copied
-if [ ! -f ${BIN_DIR}/LightgunMono.exe ]; then
-    echo ""
+echo ""
+if [ -f ${BIN_DIR}/LightgunMono.exe ]; then
+    echo "Properly copied arch/${ARCH} binaries."
+else
     echo "Could not properly determine your system architecture [${ARCH}]."
     echo "Follow the README to copy the proper files to the '/bin' folder"
-    echo ""
-    echo ""
 fi
+echo ""
+echo ""

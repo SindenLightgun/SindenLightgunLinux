@@ -42,7 +42,7 @@ chmod 755 setup*; \
 ./setup-retropie.sh; \
 ```
 
-## Per Architecture Executables
+## Per Architecture Binaries
 
 If the set-up script does not determine your `arch` properly (it should indicate this), you will need to manually copy the files over. Determine which architecture you are running on and perform the following command based on your arch.
 
