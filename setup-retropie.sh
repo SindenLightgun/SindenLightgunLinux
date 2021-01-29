@@ -4,7 +4,7 @@ mkdir -p bin
 
 ./clean-up.sh
 
-## RretroPie Scripts
+## RetroPie Scripts
 #
 mkdir -p /home/pi/RetroPie/roms/ports/
 cp -v RetroPieScripts/*.sh /home/pi/RetroPie/roms/ports/
