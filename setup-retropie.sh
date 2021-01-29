@@ -50,6 +50,14 @@ if [ $HAS_BACKUPS == 1 ]; then
     ls -la ${BIN_DIR}/*bak*
 fi
 
+## Sinden udev rules
+#
+echo ""
+echo ""
+echo "Copying Sunden udev rules."
+sudo cp -v DeviceScripts/99-sinden-lightgun.rule /etc/udev/rules.d/
+sudo sudo udevadm control --reload-rules && sudo udevadm trigger
+
 ## Copy per-arch Binaries
 #
 ARCH=$(uname -m)

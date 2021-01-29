@@ -17,3 +17,10 @@ echo ""
 echo "Cleaning previous Architecture Binaries (leaving configs)"
 find bin/ -maxdepth 1 ! -name *exe.config*  -type f -delete
 rm -rf bin/RetroArchPatch
+
+## remove udev rules
+#
+echo ""
+echo ""
+echo "Cleaning Sinden udev rules"
+sudo rm -rf /etc/udev/rules.d/*sinden-lightgun*

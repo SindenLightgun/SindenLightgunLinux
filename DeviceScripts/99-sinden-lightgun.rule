@@ -1,0 +1,4 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0f39", \
+    RUN+="/bin/bash /home/pi/SindenLightgunLinux/DeviceScripts/p1-add.sh"
+SUBSYSTEM=="usb", ACTION=="remove", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0f39", \
+    RUN+="/bin/bash /bin/bash /home/pi/SindenLightgunLinux/DeviceScripts/p1-remove.sh"
