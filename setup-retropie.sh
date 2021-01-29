@@ -24,16 +24,32 @@ cp configs/test.bmp ${BIN_DIR}/
 
 for configfile in configs/*.config; do
     CONFIG=$(basename $configfile)
-    if [ -e ${BIN_DIR}/${CONFIG} ]; then
+    if [ -f ${BIN_DIR}/${CONFIG} ]; then
         cp ${BIN_DIR}/${CONFIG} ${BIN_DIR}/${CONFIG}.bak.${VERSION}.${TS}
     else
         cp ${configfile} ${BIN_DIR}/
     fi
 done
 
+## Copy per-arch executables
+#
+ARCH=$(uname -m)
 
-echo ""
-echo ""
-echo "Dont forget to copy your 'arch/' files"
-echo ""
-echo ""
+if [ [ "$ARCH" == *"arm"* ] ]; then
+    ARCH="Pi-ARM"
+fi
+
+if [ -e arch/${ARCH} ]; then
+    echo "Copying ${ARCH} executables."
+    cp -r arch/${ARCH}/* ${BIN_DIR}/
+fi
+
+
+## Leave this out of the above just to make sure stuff was copied
+if [ ! -f ${BIN_DIR}/LightgunMono.exe ]; then
+    echo ""
+    echo "Could not properly determine your system architecture."
+    echo "Follow the README to copy the proper files to the '/bin' folder"
+    echo ""
+    echo ""
+fi

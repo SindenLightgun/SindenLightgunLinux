@@ -44,24 +44,24 @@ chmod 755 setup*; \
 
 ## Per Architecture Executables
 
-Determine which architecture you are running on and copy the files
+If the set-up script does not determine your `arch` properly (it should indicate this), you will need to manually copy the files over. Determine which architecture you are running on and perform the following command based on your arch.
 
-### Pi-Arm
+### Pi/Arm
 
 ```
-cp -r arch/Pi-Arm/* bin/
+cp -r arch/Pi-ARM/* bin/
 ```
 
 ### x86-32bit
 
 ```
-cp -r arch/x86-32bit/* bin/
+cp -r arch/x86_32/* bin/
 ```
 
 ### x86-64bit
 
 ```
-cp -r arch/x86-64bit/* bin/
+cp -r arch/x86_64/* bin/
 ```
 
 ## Finish
