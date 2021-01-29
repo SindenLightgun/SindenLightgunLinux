@@ -35,7 +35,7 @@ done
 #
 ARCH=$(uname -m)
 
-if [ [ "$ARCH" == *"arm"* ] ]; then
+if [[ "$ARCH" == *"arm"* ]]; then
     ARCH="Pi-ARM"
 fi
 
