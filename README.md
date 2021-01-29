@@ -31,7 +31,7 @@ If you are a new install, you will be on the default branch of the repo, typical
 git branch checkout VERSION_NAME
 ```
 
-## Configure
+## Configure / Setup
 
 Configure Sinden Lightgun dependencies, utilities, and borders. These scripts will update the software as needed, but not touch an existing configuration file(s).
 
