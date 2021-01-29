@@ -1,5 +1,13 @@
 # Installation
 
+BETA - this is currently in a BETA phase. The Pi is setup is properly configured. Unclear if the 32/64 bit binaries were properly included from the [original driver files](https://www.sindenlightgun.com/drivers/).
+
+Want to test them out and [let us know](https://github.com/SindenLightgun/SindenLightgunLinux/issues/1)?
+
+## Report bugs
+
+[Create an issue](https://github.com/SindenLightgun/SindenLightgunLinux/issues).
+
 ## Download
 
 ### New install
