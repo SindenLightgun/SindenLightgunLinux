@@ -23,7 +23,7 @@ cd /home/pi/SindenLightgunLinux
 git pull
 ```
 
-Re-Run setup is there were Sinden utility changes
+Re-run setup if there were Sinden utility changes. This should be able to be run anytime without negative affects.
 
 ```
 ./setup-retropie.sh
