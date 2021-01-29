@@ -61,6 +61,8 @@ fi
 if [ -f ${BIN_DIR}/LightgunMono.exe ]; then
     echo ""
     echo "Properly copied arch/${ARCH} binaries."
+    echo "Sinden Lightgun sucessfully installed."
+    echo "You will need to configure per emulator as needed."
 else
     echo ""
     echo ""
