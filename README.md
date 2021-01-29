@@ -20,7 +20,7 @@ Update files from the remote repository
 
 ```
 cd /home/pi/SindenLightgunLinux
-git pull
+git fetch
 ```
 
 ### Change to a new version
@@ -29,6 +29,12 @@ If you are a new install, you will be on the default branch of the repo, typical
 
 ```
 git branch checkout VERSION_NAME
+```
+
+You can list the current versions via:
+
+```
+git branch -a
 ```
 
 ## Configure / Setup
