@@ -85,4 +85,8 @@ cp -r arch/x86_64/* bin/
 
 You should now reboot to have EmulationStation include the Lightgun
 
+## Example Configs
+
+Can be found [here](examples.md)
+
 
