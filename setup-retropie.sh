@@ -1,6 +1,10 @@
 #!/bin/bash
 
-mkdir -p bin
+VERSION=$(git symbolic-ref --short -q HEAD)
+TS=$(date +%s)
+BIN_DIR="bin"
+
+mkdir -p $BIN_DIR
 
 ./clean-up.sh
 
@@ -16,12 +20,6 @@ cp -v Borders/RetroArchBorders/* /opt/retropie/emulators/retroarch/overlays/
 
 ## Executable Directory / configs
 #
-BIN_DIR="bin"
-mkdir -p $BIN_DIR
-
-VERSION=$(git symbolic-ref --short -q HEAD)
-TS=$(date +%s)
-
 cp configs/test.bmp ${BIN_DIR}/
 
 for configfile in configs/*.config; do
