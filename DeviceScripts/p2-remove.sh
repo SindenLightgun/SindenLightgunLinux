@@ -4,9 +4,7 @@ LOCKFILE=/tmp/LightgunMono2.exe.lock
 
 if [ -e $LOCKFILE ]; then
     PID=$(sudo cat ${LOCKFILE})
-    if [ "$PID" != "" ]; then
-        sudo kill $PID
-        sudo echo "" > $LOCKFILE
-        sleep 2
-    fi
+    sudo kill $PID
+    sudo rm $LOCKFILE
+    sleep 2
 fi
