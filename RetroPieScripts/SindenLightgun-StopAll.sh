@@ -3,7 +3,7 @@
 #sudo pkill "mono"
 #sudo rm -f /tmp/LightgunMono*
 
-for lockfile in /tmp/LightgunMono*; do
+for lockfile in /tmp/LightgunMono*lock; do
     sudo kill -USR2 'cat ${lockfile}'
     sudo rm -f ${lockfile}
 done
