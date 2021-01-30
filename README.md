@@ -17,6 +17,7 @@ This repo contains all the Sinden Lightgun Linux utilities for setup and configu
 - Copy current binaries to the `/home/pi/SindenLightgunLinux/bin`
 - Add USB udev `sinden-lightgun.rules` for auto detection (P1)
     - Plugging in/out the P1-Gun will auto start/stop the device
+    - Auto-Detect on boot == Questionable
 
 ## Report bugs
 
