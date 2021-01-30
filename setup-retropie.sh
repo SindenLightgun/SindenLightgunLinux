@@ -84,7 +84,7 @@ else
     echo ""
     echo ""
     echo "Could not properly determine your system architecture [${ARCH}]."
-    echo "Follow the README to copy the proper files to the '/bin' folder"
+    echo "Follow the README to copy the proper files to the 'bin/' folder"
 fi
 echo ""
 echo ""
