@@ -1,6 +1,6 @@
 # Installation
 
-[License](License.MD)
+[License](License.md)
 
 BETA - this is currently in a BETA phase. The Pi is setup is properly configured. Unclear if the 32/64 bit binaries were properly included from the [original driver files](https://www.sindenlightgun.com/drivers/).
 
