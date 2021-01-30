@@ -8,6 +8,8 @@ Want to test them out and [let us know](https://github.com/SindenLightgun/Sinden
 
 ## About
 
+[Version Info](Version.md)
+
 This repo contains all the Sinden Lightgun Linux utilities for setup and configuration. After successfully running the setup scripts it will:
 
 - Clean up old Sinden files
@@ -105,6 +107,6 @@ You should now reboot to have EmulationStation include the Lightgun
 
 ## Example Configs
 
-Can be found [here](examples.md)
+Can be found [here](Examples.md)
 
 
