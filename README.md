@@ -129,7 +129,7 @@ Can be found [here](Examples.md)
 
 - head to discord, lets figure this out
 
-### Auto Start/Stop not working
+### Auto Start/Stop not working, but gun works
 
 With the gun plugged in run
 
