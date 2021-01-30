@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "run" > /tmp/p1-add.txt
+sudo -u pi echo "run" > /tmp/p1-add.txt
 sleep 20
-/home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh
+sudo -u pi /home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh

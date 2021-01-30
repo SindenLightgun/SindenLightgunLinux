@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "run" > /tmp/p1-remove.txt
-/home/pi/RetroPie/roms/ports/SindenLightgun-StopAll.sh
+sudo -u pi echo "run" > /tmp/p1-remove.txt
+sudo -u pi /home/pi/RetroPie/roms/ports/SindenLightgun-StopAll.sh
