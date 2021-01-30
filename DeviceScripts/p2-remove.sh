@@ -6,7 +6,7 @@ if [ -e $LOCKFILE ]; then
     PID=$(sudo cat ${LOCKFILE})
     if [ "$PID" != "" ]; then
         sudo kill $PID
-        echo "" > $LOCKFILE
+        sudo echo "" > $LOCKFILE
         sleep 2
     fi
 fi
