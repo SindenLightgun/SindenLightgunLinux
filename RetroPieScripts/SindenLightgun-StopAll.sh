@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pkill "mono"
-sudo rm -f /tmp/LightgunMono*
+/home/pi/SindenLightgunLinux/DeviceScripts/p1-remove.sh
+/home/pi/SindenLightgunLinux/DeviceScripts/p2-remove.sh
 
 sleep 2

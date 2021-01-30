@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCKFILE=/tmp/LightgunMono.exe.lock
+LOCKFILE=/tmp/LightgunMono2.exe.lock
 
 if [ -e $LOCKFILE ]; then
     DETAILS=$(sudo cat ${LOCKFILE})
