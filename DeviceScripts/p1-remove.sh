@@ -1,3 +1,6 @@
 #!/bin/bash
 
-/home/pi/RetroPie/roms/ports/SindenLightgun-StopAll.sh
+LOCKFILE=/tmp/
+sudo kill -USR2 'cat ${LOCKFILE}'
+sudo rm -f ${LOCKFILE}
+sleep 2
