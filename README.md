@@ -75,7 +75,7 @@ Configure Sinden Lightgun dependencies, utilities, and borders. These scripts wi
 
 ```
 cd /home/pi/SindenLightgunLinux; \
-chmod 755 setup*; \
+chmod 755 *.sh; \
 ./setup-lightgun.sh; \
 ./setup-retropie.sh; \
 ```
