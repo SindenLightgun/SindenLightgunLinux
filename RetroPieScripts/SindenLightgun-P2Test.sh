@@ -4,3 +4,5 @@
 
 cd /home/pi/SindenLightgunLinux/bin/
 sudo mono LightgunMono2.exe sdl 30
+
+/home/pi/SindenLightgunLinux/DeviceScripts/p2-remove.sh
