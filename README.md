@@ -137,7 +137,7 @@ With the gun plugged in run
 cat /proc/bus/input/devices
 ```
 
-This should output a list of devices, including 3 entries for Sinden Gun. One of the entries should be `Name="SindenCameraE` and have a line that identifies the vendor/product/version. Thos values should be
+This should output a list of devices, including 3 entries for Sinden Gun. One of the entries should be `Name="SindenCameraE` and have a line that identifies the vendor/product/version. Those values should be
 
 ```
 I: Bus=0003 Vendor=32e4 Product=9210 Version=0100
