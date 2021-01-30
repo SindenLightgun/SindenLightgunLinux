@@ -111,4 +111,42 @@ You should now reboot to have EmulationStation include the Lightgun
 
 Can be found [here](Examples.md)
 
+## Troubleshooting
+
+### Gun not working
+
+- ssh into your RetroPie
+- Plug the gun in
+- check for the `LightgunMono.exe.lock` Lockfile `ls /tmp/Light*`
+- Is the Lockfile there? Yes -- head to discord, lets figure this out
+- Is the Lockfile there? No
+    - StopAll Devices `/home/pi/RetroPie/roms/ports/SindenLightgun-StopAll.sh`
+    - Manually start P1 `/home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh`
+    - Check for the lockfile `ls /tmp/Light*`
+    - Still not working? -- head to discord, lets figure this out
+
+### Gun not working in an emulator/game
+
+- head to discord, lets figure this out
+
+### Auto Start/Stop not working
+
+With the gun plugged in run
+
+```
+cat /proc/bus/input/devices
+```
+
+This should output a list of devices, including 3 entries for Sinden Gun. One of the entries should be `Name="SindenCameraE` and have a line that identifies the vendor/product/version. Thos values should be
+
+```
+I: Bus=0003 Vendor=32e4 Product=9210 Version=0100
+```
+
+If they are not, the ID for your gun is different, and why the auto detect may not be working
+
+You will need to change the values in `/etc/udev/rules.d/99-sinden-lightgun.rules` to match your gun.
+
+*TODO* if this is an actual bug, need to add a hook to NOT swap an updated file out.
+
 
