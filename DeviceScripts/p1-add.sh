@@ -2,8 +2,8 @@
 
 TMP="/tmp/p1-add.txt"
 
-if [ -e $TMP ]; then
-    end=$((SECONDS+10))
+if [ ! -e $TMP ]; then
+    end=$((SECONDS+5))
 
     while [ $SECONDS -lt $end ]; do
         sudo -u pi echo "run" >> /tmp/p1-add.txt
