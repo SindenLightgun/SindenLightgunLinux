@@ -113,7 +113,7 @@ Can be found [here](Examples.md)
 
 ## Troubleshooting
 
-### Gun not working
+### Gun test not working
 
 - ssh into your RetroPie
 - Plug the gun in
