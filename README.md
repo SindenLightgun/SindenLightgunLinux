@@ -15,7 +15,7 @@ This repo contains all the Sinden Lightgun Linux utilities for setup and configu
 - Copy current borders to `/opt/retropie/emulators/retroarch/overlays/`
 - Copy current RetroPie scripts to `/home/pi/RetroPie/roms/ports/`
 - Copy current binaries to the `/home/pi/SindenLightgunLinux/bin`
-- Add USB udev `sinden-lightgub.rules` for auto detection (P1)
+- Add USB udev `sinden-lightgun.rules` for auto detection (P1)
 
 ## Report bugs
 
