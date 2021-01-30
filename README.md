@@ -1,4 +1,4 @@
-# Installation
+# Sinden Lightgun
 
 [License](License.md)
 
@@ -17,10 +17,11 @@ This repo contains all the Sinden Lightgun Linux utilities for setup and configu
 - Copy current binaries to the `/home/pi/SindenLightgunLinux/bin`
 - Add USB udev `sinden-lightgub.rules` for auto detection (P1)
 
-
 ## Report bugs
 
 [Create an issue](https://github.com/SindenLightgun/SindenLightgunLinux/issues).
+
+# Installation
 
 ## Download
 
