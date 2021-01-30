@@ -1,5 +1,7 @@
 [Main README](README.md)
 
+# Terms and Conditions
+
 - This software is fully owned by Sinden Technology Ltd.
 - This software may only be distributed by Sinden Technology Ltd.
 - You have no rights to copy or distribute this software.
