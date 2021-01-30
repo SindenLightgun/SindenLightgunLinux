@@ -1,10 +1,14 @@
 #!/bin/bash
 
-end=$((SECONDS+5))
+TMP="/tmp/p1-add.txt"
 
-while [ $SECONDS -lt $end ]; do
-    sudo -u pi echo "run" >> /tmp/p1-add.txt
-done
+if [ -e $TMP ]; then
+    end=$((SECONDS+5))
 
-sudo -u pi echo "run" > /tmp/p1-add.txt
-/home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh
+    while [ $SECONDS -lt $end ]; do
+        sudo -u pi echo "run" >> /tmp/p1-add.txt
+    done
+
+    /home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh
+    rm $TMP
+fi
