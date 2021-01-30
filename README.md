@@ -25,7 +25,8 @@ This repo contains all the Sinden Lightgun Linux utilities for setup and configu
 
 ## Report bugs
 
-[Create an issue](https://github.com/SindenLightgun/SindenLightgunLinux/issues).
+- [Create an issue](https://github.com/SindenLightgun/SindenLightgunLinux/issues).
+- [Join the Discord](https://discord.com/invite/B67hgt4)
 
 # Installation
 
