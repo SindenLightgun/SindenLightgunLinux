@@ -3,7 +3,7 @@
 TMP="/tmp/p1-add.txt"
 
 if [ -e $TMP ]; then
-    end=$((SECONDS+5))
+    end=$((SECONDS+10))
 
     while [ $SECONDS -lt $end ]; do
         sudo -u pi echo "run" >> /tmp/p1-add.txt
