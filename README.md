@@ -4,6 +4,18 @@ BETA - this is currently in a BETA phase. The Pi is setup is properly configured
 
 Want to test them out and [let us know](https://github.com/SindenLightgun/SindenLightgunLinux/issues/1)?
 
+## About
+
+This repo contains all the Sinden Lightgun Linux utilities for setup and configuration. After successfully running the setup scripts it will:
+
+- Clean up old Sinden files
+- Backup existing gun configurations
+- Copy current borders to `/opt/retropie/emulators/retroarch/overlays/`
+- Copy current RetroPie scripts to `/home/pi/RetroPie/roms/ports/`
+- Copy current binaries to the `/home/pi/SindenLightgunLinux/bin`
+- Add USB udev `sinden-lightgub.rules` for auto detection (P1)
+
+
 ## Report bugs
 
 [Create an issue](https://github.com/SindenLightgun/SindenLightgunLinux/issues).
