@@ -54,7 +54,7 @@ fi
 #
 echo ""
 echo ""
-echo "Copying Sunden udev rules."
+echo "Copying Sinden udev rules."
 sudo cp -v DeviceScripts/99-sinden-lightgun.rules /etc/udev/rules.d/
 sudo sudo udevadm control --reload-rules && sudo udevadm trigger
 
