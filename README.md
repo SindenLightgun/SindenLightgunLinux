@@ -1,4 +1,4 @@
-# Sinden Lightgun
+# Sinden Lightgun - Linux Utilities
 
 [License](License.md)
 
