@@ -1,6 +1,7 @@
 #!/bin/bash
 
 LOCKFILE=/tmp/LightgunMono.exe.lock
-sudo kill -USR2 'cat ${LOCKFILE}'
-sudo rm -f ${LOCKFILE}
+DETAILS=$(cat ${LOCKFILE})
+sudo kill -USR2 $DETAILS
+sudo rm -f $LOCKFILE
 sleep 2
