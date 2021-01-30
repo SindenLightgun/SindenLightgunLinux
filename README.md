@@ -18,10 +18,10 @@ This repo contains all the Sinden Lightgun Linux utilities for setup and configu
 - Copy current borders to `/opt/retropie/emulators/retroarch/overlays/`
 - Copy current RetroPie scripts to `/home/pi/RetroPie/roms/ports/`
 - Copy current binaries to the `/home/pi/SindenLightgunLinux/bin`
-- Add USB udev `sinden-lightgun.rules` for auto detection (P1)
-    - Plugging in/out the P1-Gun will auto start/stop the device
-    - Auto-Detect on boot == Questionable
+- Add USB `udev` `sinden-lightgun.rules` for auto detection
+    - P1-Gun: Plugging in/out will auto start/stop the device
     - P2-Gun == Not Implemented; Must run the `SindenLightgun-P2Start` utility in `PORTS`
+    - Auto-Detect on boot == Questionable
 
 ## Report bugs
 
