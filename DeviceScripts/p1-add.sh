@@ -1,14 +1,3 @@
 #!/bin/bash
 
-TMP="/tmp/p1-add.txt"
-
-if [ ! -e $TMP ]; then
-    end=$((SECONDS+5))
-
-    while [ $SECONDS -lt $end ]; do
-        sudo -u pi echo "run" >> /tmp/p1-add.txt
-    done
-
-    /home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh
-    rm $TMP
-fi
+echo /home/pi/RetroPie/roms/ports/SindenLightgun-P1Start.sh | at -t `date -v+5S "+%Y%m%d%H%M%S"`
