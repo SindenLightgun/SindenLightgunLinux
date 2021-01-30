@@ -1,6 +1,7 @@
 # Sinden Lightgun - Linux Utilities
 
-[License](License.md)
+- [License](License.md)
+- [DocUmentation](SindenLightgunDocumentationV1.05_Linux.pdf)
 
 BETA - this is currently in a BETA phase. The Pi is setup is properly configured. Unclear if the 32/64 bit binaries were properly included from the [original driver files](https://www.sindenlightgun.com/drivers/).
 
@@ -8,7 +9,7 @@ Want to test them out and [let us know](https://github.com/SindenLightgun/Sinden
 
 ## About
 
-[Version Info](Version.md)
+- [Version Info](Version.md)
 
 This repo contains all the Sinden Lightgun Linux utilities for setup and configuration. After successfully running the setup scripts it will:
 
