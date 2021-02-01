@@ -10,11 +10,10 @@ You have 4 options:
 1. Put up with the issue by moving to the left every time you start a game.
 
 2. Patch RetroArch, copy the included files over the top of the files located here:
-/opt/retropie/emulators/retroarch/bin
-Back up your original files first.
+`/opt/retropie/emulators/retroarch/bin` **Back up your original files first.**
 
 3. You can change these lines over in the RetroPie RetroArch install script located here:
-`/home/pi/RetroPie-Setup/scriptmodules/emulators/retroarch.sh`
+`/home/pi/RetroPie-Setup/scriptmodules/emulators/retroarch.sh` **Back up your original files first.**
 
 Then you can update RetroArch from the RetroPie setup option on the frontend. Choose update from source.
 
@@ -29,7 +28,7 @@ function sources_retroarch() {
 }
 ```
 
-4. I think if you disable the X11 flag on the setup script it should be OK which is probably the ideal solution for now until an upstream patch.  So I need to test that. Maybe just removing this will do the trick, although haven't analysed what consequences this would have.
+4. I think if you disable the X11 flag on the setup script it should be OK which is probably the ideal solution for now until an upstream patch.  So I need to test that. Maybe just removing this will do the trick, although haven't analysed what consequences this would have. **Back up your original files first.**
 
 ```
 isPlatform "x11" && depends+=(libx11-xcb-dev libpulse-dev libvulkan-dev)
