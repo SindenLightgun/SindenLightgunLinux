@@ -20,7 +20,7 @@ find bin/ -maxdepth 1 ! -name *exe.config*  -type f -delete
 ##
 # This is no longer copied, leave this in here to
 # clean up older installs for one version
-echo "Reminder to devs - remove this after next version after (1.5.3)"
+echo "Reminder to devs - remove this 2 versions after after 1.5.3"
 rm -rf bin/RetroArchPatch
 
 ## remove udev rules
